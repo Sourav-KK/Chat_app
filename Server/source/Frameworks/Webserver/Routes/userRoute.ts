@@ -1,4 +1,5 @@
 import express, { Router, Request, Response } from "express";
+import DummyChatData from "../../../Utilities/DummyData";
 
 const userRoute = () => {
   const router: Router = express.Router();
@@ -19,8 +20,8 @@ const userRoute = () => {
   });
 
   // individual messages
-  router.get("/direct", (_req: Request, res: Response) => {
-    res.send("in signup");
+  router.get("/api/chats", (_req: Request, res: Response) => {
+    res.send(DummyChatData);
   });
 
   // group chat
