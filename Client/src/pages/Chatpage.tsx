@@ -9,7 +9,7 @@ const Chatpage = () => {
   }, []);
 
   const fetchChats = async () => {
-    const data = await axios.get("/api/chat");
+    const data = await axios.get("http://localhost:4001/api/chats");
     console.log(data);
   };
 

@@ -104,7 +104,7 @@ const DummyChatData = [
       name: "Guest User",
       email: "guest@example.com",
     },
-  },
+  }, 
 ];
 
-export default DummyChatData;
+export { DummyChatData};

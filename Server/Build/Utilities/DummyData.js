@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.DummyChatData = void 0;
 const DummyChatData = [
     {
         isGroupChat: false,
@@ -108,4 +109,4 @@ const DummyChatData = [
         },
     },
 ];
-exports.default = DummyChatData;
+exports.DummyChatData = DummyChatData;

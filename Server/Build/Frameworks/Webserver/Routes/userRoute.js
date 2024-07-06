@@ -4,7 +4,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
-const DummyData_1 = __importDefault(require("../../../Utilities/DummyData"));
+const DummyData_1 = require("../../../Utilities/DummyData");
 const userRoute = () => {
     const router = express_1.default.Router();
     router.get("/", (_req, res) => {
@@ -17,7 +17,7 @@ const userRoute = () => {
         res.send("in signup");
     });
     router.get("/api/chats", (_req, res) => {
-        res.send(DummyData_1.default);
+        res.send(DummyData_1.DummyChatData);
     });
     router.get("/direct", (_req, res) => {
         res.send("in signup");

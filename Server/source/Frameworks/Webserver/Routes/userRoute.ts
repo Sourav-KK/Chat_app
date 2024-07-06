@@ -1,5 +1,5 @@
 import express, { Router, Request, Response } from "express";
-import DummyChatData from "../../../Utilities/DummyData";
+import {DummyChatData} from "../../../Utilities/DummyData";
 
 const userRoute = () => {
   const router: Router = express.Router();
